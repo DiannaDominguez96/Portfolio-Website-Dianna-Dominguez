@@ -20,7 +20,8 @@ nav > ul > li > a {
 #hero{
   background-color:#F8F1FF;
    padding: 20px 0;
-   box-shadow;
+   display:inline-block;
+   width: 100%;
 }
 
 *{
