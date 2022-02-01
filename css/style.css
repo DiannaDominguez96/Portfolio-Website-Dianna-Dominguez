@@ -7,12 +7,11 @@ Primary Color (Navy Blue):#013691;
 Secondary Color (Dodger Blue):#388AF5;
 Accent Color 1(Dark Turquoise):#34C8D9;
 Accent Color 2(Pastel Yellow):#FAF2A1;*/
-
 header {
   background-color: #013691;
   text-align: center;
   padding: 10px;
-  margin:10px;
+  margin: 10px;
 }
 
 .logo {
@@ -22,23 +21,27 @@ header {
   line-height: 2.5em;
 }
 
+main {
+  padding-top: 133px;
+}
+
 nav {
   display: inline-block;
   width: 100%;
 }
 
-nav > ul {
+nav>ul {
   list-style-type: none;
   padding: 0;
 }
 
-nav > ul > li {
+nav>ul>li {
   display: inline-block;
   list-style-type: none;
   padding: 0;
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
   display: inline-block;
   padding: 0 15px;
   color: #000000;
@@ -66,10 +69,10 @@ nav > ul > li > a {
   padding: 24px 0 0;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0.5);
+  border-top: 1px solid rgba(255, 127, 80, 0.5);
 }
 
 .navtoggle.responsive li:last-child {
@@ -77,8 +80,8 @@ nav > ul > li > a {
 }
 
 a {
-  color:#013691;
-  text-decoration:none;
+  color: #013691;
+  text-decoration: none;
   /* No underlining*/
 }
 
@@ -89,7 +92,7 @@ body {
 
 a:hover {
   color: #ffffff;
-   text-decoration:underline;
+  text-decoration: underline;
   /* Underlining when hovering over a link */
 }
 
@@ -106,7 +109,7 @@ a:active {
 .button {
   display: inline-block;
   background-color: #013691;
-  color:#ffffff;
+  color: #ffffff;
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
@@ -114,15 +117,15 @@ a:active {
   transition: 0.2s opacity;
 }
 
-.button:hover{
-  opacity:0.8;
+.button:hover {
+  opacity: 0.8;
 }
 
-.button.contact{
+.button.contact {
   background-color: transparent;
-   color: #013691;
-   text-transform: uppercase;
-   border: 2px solid #013691;
+  color: #013691;
+  text-transform: uppercase;
+  border: 2px solid #013691;
 }
 
 .button.contact:hover {
@@ -132,8 +135,96 @@ a:active {
 
 img {
   width: 100%;
-  max-width:100%;
-  height:auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
+}
+
+.row::after {
+  clear: both;
+  display: table;
+}
+
+.columns {
+  background-color: transparent;
+  border: 1px dotted black;
+  padding: 0px 20px;
+}
+
+.columns .header {
+  padding: 50px;
+  text-align: center;
+  background-color: #013691;
+  color: white;
+}
+
+.columns .project {
+  background-color: inherit;
+  padding: 10px;
+}
+
+.center {
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@keyframes color-change {
+  from {
+    fill: #edc655;
+  }
+
+  to {
+    fill: #f76414;
+  }
+}
+
+.sun {
+  animation-duration: 5s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
 /* === Medium Devices (641px and larger) === */
@@ -149,17 +240,42 @@ img {
     margin-top: 4px;
   }
 
-  nav > ul > li {
-    display: inline-block;
-    position: relative;
+  .col-md-6 {
+    width: 50%;
   }
-
-  .navtoggle li:not(:last-child) {
-    display: inline-block;
-  }
-
-  .navtoggle li:last-child {
-    display: none;
-  }
-
 }
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  header {
+    text-align: unset;
+    padding: inherit;
+
+    nav>ul>li {
+      display: inline-block;
+      position: relative;
+    }
+
+    .col-lg-7 {
+      width: 60%;
+    }
+
+    .navtoggle li:not(:last-child) {
+      display: inline-block;
+    }
+
+    .col-lg-5 {
+      width: 40%;
+    }
+  }
+
+  /* ==============================
+X-large devices (1440px or larger)
+================================= */
+  @media only screen and (min-width: 1440px) {
+    .navtoggle li:last-child {
+      display: none;
+    }
+  }
