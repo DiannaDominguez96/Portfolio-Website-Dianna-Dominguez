@@ -14,7 +14,7 @@ header {
   margin: 10px;
 }
 
-.logo {
+#logo {
   max-width: 150px;
   font-size: 20px;
   font-weight: 600;
@@ -23,6 +23,14 @@ header {
 
 main {
   padding-top: 133px;
+  width:90%;
+  margin:auto;
+
+}
+
+footer{
+  width:90%;
+  margin:auto;
 }
 
 nav {
@@ -44,7 +52,7 @@ nav>ul>li {
 nav>ul>li>a {
   display: inline-block;
   padding: 0 15px;
-  color: #000000;
+  color: white;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -79,15 +87,16 @@ nav>ul>li>a {
   padding: 0 0 10px;
 }
 
-a {
-  color: #013691;
-  text-decoration: none;
-  /* No underlining*/
-}
 
 body {
   background-color: #F8F1FF;
   font-family: 'calibri', sans-serif;
+}
+
+a {
+  color: #013691;
+  text-decoration: none;
+  /* No underlining*/
 }
 
 a:hover {
@@ -98,15 +107,15 @@ a:hover {
 
 a:visited {
   /* visited link */
-  color: white;
+  color: #013691;
 }
 
 a:active {
   /* selected link */
-  color: white;
+  color: #013691;
 }
 
-.button {
+.button  {
   display: inline-block;
   background-color: #013691;
   color: #ffffff;
@@ -117,20 +126,12 @@ a:active {
   transition: 0.2s opacity;
 }
 
+a.button{
+  color:white;
+}
+
 .button:hover {
   opacity: 0.8;
-}
-
-.button.contact {
-  background-color: transparent;
-  color: #013691;
-  text-transform: uppercase;
-  border: 2px solid #013691;
-}
-
-.button.contact:hover {
-  background-color: #013691;
-  color: #ffffff;
 }
 
 img {
@@ -184,53 +185,17 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-
-@keyframes color-change {
-  from {
-    fill: #edc655;
-  }
-
-  to {
-    fill: #f76414;
-  }
+.fab{
+  font-size:50px;
 }
 
-.sun {
-  animation-duration: 5s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
+.social-media{
+  margin-top:50px;
 }
 
-@keyframes cloud-move {
-  from {
-    transform: translate(0, 50px);
-  }
-
-  to {
-    transform: translate(200px, 50px);
-  }
+.social-media a{
+  margin-right: 30px;
 }
-
-.cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
-}
-
-@keyframes cloud-move-reverse {
-  from {
-    transform: translate(446px, 48px);
-  }
-
-  to {
-    transform: translate(100px, 48px);
-  }
-}
-
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
-}
-
 /* === Medium Devices (641px and larger) === */
 @media only screen and (min-width: 641px) {
   header {
