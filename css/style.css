@@ -171,6 +171,10 @@ img {
   padding: 10px;
 }
 
+.col-sml-12{
+  width:100%;
+}
+
 .center {
   text-align: center;
 }
@@ -241,7 +245,10 @@ img {
   }
 
   .col-md-6 {
-    width: 50%;
+    width:50%;
+  }
+  .row{
+    display:flex;
   }
 }
 
