@@ -9,20 +9,22 @@ Accent Color 1(Dark Turquoise):#34C8D9;
 Accent Color 2(Pastel Yellow):#FAF2A1;*/
 header {
   background-color: #013691;
-  text-align: center;
   padding: 10px;
   margin: 10px;
 }
 
 #logo {
+  min-width: 641px;
   max-width: 150px;
   font-size: 20px;
   font-weight: 600;
   line-height: 2.5em;
+  display: inline-block;
+  list-style-type: none;
 }
 
 main {
-  padding-top: 133px;
+  padding-top: 56px;
   width:90%;
   margin:auto;
 
@@ -33,19 +35,13 @@ footer{
   margin:auto;
 }
 
-nav {
-  display: inline-block;
-  width: 100%;
-}
-
 nav>ul {
   list-style-type: none;
   padding: 0;
+  margin: 1em 0;
 }
 
 nav>ul>li {
-  display: inline-block;
-  list-style-type: none;
   padding: 0;
 }
 
@@ -71,6 +67,7 @@ nav>ul>li>a {
   right: 0;
   top: 2px;
   font-size: 20px;
+  padding-right:0;
 }
 
 .navtoggle.responsive nav {
@@ -87,6 +84,13 @@ nav>ul>li>a {
   padding: 0 0 10px;
 }
 
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+
+.navtoggle li:last-child {
+  display: none;
+}
 
 body {
   background-color: #F8F1FF;
