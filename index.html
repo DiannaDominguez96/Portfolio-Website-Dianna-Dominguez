@@ -7,6 +7,7 @@
   <title>Welcome!</title>
   <script src="https://kit.fontawesome.com/34be78ba9a.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <i class="fa-solid fa-bars"></i>
 </head>
@@ -18,14 +19,14 @@
     <img id="logo" src="https://via.placeholder.com/150x50?text=Logo" alt="Dianna Dominguez">
   </div>
     <div id="header" class="container col-md-6 col-sm-12">
-      <nav>
+      <nav class = "navtoggle" id= "myNavtoggle">
         <ul>
           <li><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
         </ul>
       </nav>
-      <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
     </div>
   </header>
 
