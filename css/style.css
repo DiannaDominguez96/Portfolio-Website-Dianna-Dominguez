@@ -34,6 +34,10 @@ footer{
   margin:auto;
 }
 
+.fa-bars{
+  font-size:25px;
+}
+
 nav>ul {
   list-style-type: none;
   padding: 0;
@@ -110,11 +114,6 @@ a:hover {
 
 a:visited {
   /* visited link */
-  color: #013691;
-}
-
-a:active {
-  /* selected link */
   color: white;
 }
 
@@ -194,10 +193,12 @@ img {
 
 .social-media{
   margin-top:50px;
+  color:#013691;
 }
 
 .social-media a{
   margin-right: 30px;
+  color:#013691;
 }
 /* === Medium Devices (641px and larger) === */
 @media only screen and (min-width: 641px) {
@@ -227,6 +228,7 @@ Large devices (1024px or larger)
   header {
     text-align: unset;
     padding: inherit;
+  }
 
     nav>ul>li {
       display: inline-block;
