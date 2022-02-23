@@ -14,7 +14,8 @@ header {
 }
 
 #logo {
-  max-width: 150px;
+  max-width: 500px;
+  max-height: 500px;
   font-size: 20px;
   font-weight: 600;
   line-height: 2.5em;
@@ -24,18 +25,17 @@ header {
 
 main {
   padding-top: 56px;
-  width:90%;
-  margin:auto;
-
+  width: 90%;
+  margin: auto;
 }
 
-footer{
-  width:90%;
-  margin:auto;
+footer {
+  width: 90%;
+  margin: auto;
 }
 
-.fa-bars{
-  font-size:25px;
+.fa-bars {
+  font-size: 25px;
 }
 
 nav>ul {
@@ -70,7 +70,7 @@ nav>ul>li>a {
   right: 0;
   top: 2px;
   font-size: 20px;
-  padding-right:0;
+  padding-right: 0;
 }
 
 .navtoggle.responsive nav {
@@ -96,7 +96,7 @@ nav>ul>li>a {
 }
 
 body {
-  background-color: #F8F1FF;
+  background-color: #fdfeff;
   font-family: 'calibri', sans-serif;
 }
 
@@ -117,7 +117,7 @@ a:visited {
   color: white;
 }
 
-.button  {
+.button {
   display: inline-block;
   background-color: #013691;
   color: #ffffff;
@@ -128,8 +128,8 @@ a:visited {
   transition: 0.2s opacity;
 }
 
-a.button{
-  color:white;
+a.button {
+  color: white;
 }
 
 .button:hover {
@@ -174,8 +174,8 @@ img {
   padding: 10px;
 }
 
-.col-sml-12{
-  width:100%;
+.col-sml-12 {
+  width: 100%;
 }
 
 .center {
@@ -187,19 +187,21 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-.fab{
-  font-size:50px;
+
+.fab {
+  font-size: 50px;
 }
 
-.social-media{
-  margin-top:50px;
-  color:#013691;
+.social-media {
+  margin-top: 50px;
+  color: #013691;
 }
 
-.social-media a{
+.social-media a {
   margin-right: 30px;
-  color:#013691;
+  color: #013691;
 }
+
 /* === Medium Devices (641px and larger) === */
 @media only screen and (min-width: 641px) {
   header {
@@ -214,10 +216,11 @@ img {
   }
 
   .col-md-6 {
-    width:50%;
+    width: 50%;
   }
-  .row{
-    display:flex;
+
+  .row {
+    display: flex;
   }
 }
 
@@ -230,32 +233,33 @@ Large devices (1024px or larger)
     padding: inherit;
   }
 
-    nav>ul>li {
-      display: inline-block;
-      position: relative;
-    }
-
-    .col-lg-7 {
-      width: 60%;
-    }
-
-    .navtoggle li:not(:last-child) {
-      display: inline-block;
-    }
-
-    .col-lg-5 {
-      width: 40%;
-    }
-    .row{
-      display:flex;
-    }
+  nav>ul>li {
+    display: inline-block;
+    position: relative;
   }
 
-  /* ==============================
+  .col-lg-7 {
+    width: 60%;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .col-lg-5 {
+    width: 40%;
+  }
+
+  .row {
+    display: flex;
+  }
+}
+
+/* ==============================
 X-large devices (1440px or larger)
 ================================= */
-  @media only screen and (min-width: 1440px) {
-    .navtoggle li:last-child {
-      display: none;
-    }
+@media only screen and (min-width: 1440px) {
+  .navtoggle li:last-child {
+    display: none;
   }
+}
