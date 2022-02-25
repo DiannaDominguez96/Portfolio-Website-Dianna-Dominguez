@@ -14,8 +14,8 @@ header {
 }
 
 #logo {
-  max-width: 500px;
-  max-height: 500px;
+  max-width: 150px;
+  max-height: 50px;
   font-size: 20px;
   font-weight: 600;
   line-height: 2.5em;
@@ -107,9 +107,13 @@ a {
 }
 
 a:hover {
-  color: #ffffff;
+  color: white;
   text-decoration: underline;
   /* Underlining when hovering over a link */
+}
+
+#phone-link{
+  color:black;
 }
 
 a:visited {
@@ -193,13 +197,12 @@ img {
 }
 
 .social-media {
-  margin-top: 50px;
-  color: #013691;
+  color: black;
 }
 
 .social-media a {
   margin-right: 30px;
-  color: #013691;
+  color: black;
 }
 
 /* === Medium Devices (641px and larger) === */
