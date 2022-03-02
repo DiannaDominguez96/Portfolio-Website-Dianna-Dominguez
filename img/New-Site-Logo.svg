@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="428" height="143" viewBox="0 0 428 143">
+  <defs>
+    <clipPath id="clip-New-Site-Logo">
+      <rect width="428" height="143"/>
+    </clipPath>
+  </defs>
+  <g id="New-Site-Logo" clip-path="url(#clip-New-Site-Logo)">
+    <rect width="428" height="143" fill="rgba(24,158,224,0.71)"/>
+    <rect id="Rectangle_1" data-name="Rectangle 1" width="407" height="126" transform="translate(10 9)" fill="#fff"/>
+    <g id="Group_1" data-name="Group 1" transform="translate(119 3)">
+      <text id="Dianna_Dominguez" data-name="Dianna Dominguez" transform="translate(-28 65)" font-size="30" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="0" y="0">Dianna Dominguez</tspan></text>
+      <text id="UI_UX_Designer" data-name="UI/UX Designer" transform="translate(4 99)" font-size="20" font-family="RobotoMono-Regular, Roboto Mono"><tspan x="0" y="0">UI/UX Designer</tspan></text>
+    </g>
+  </g>
+</svg>

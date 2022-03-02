@@ -13,26 +13,30 @@
 </head>
 
 <body>
-  <header>
-    <img src="img/New-Site-Logo.png" alt="Dianna Dominguez">
-    <div id="header" class="container">
-      <nav class="navtoggle" id="myNavtoggle">
-        <ul>
-          <li><a href="index.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
-        </ul>
-      </nav>
-
-    </div>
-  </header>
+  <body>
+    <header>
+      <div class="container">
+        <div class="navtoggle" id="myNavtoggle">
+          <a href="index.html">
+            <img id="logo" src="img/New-Site-Logo.svg" alt="Dianna Dominguez">
+          </a>
+              <nav>
+                <ul>
+                  <li><a href="index.html">Work</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                  <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                </ul>
+              </nav>
+          </div>
+        </div>
+    </header>
 
   <main>
     <div>
       <h1>About Me</h1>
     </div>
-    <picture>
+    <picture class="portfile-picture">
       <source srcset="./img/portfolio-picture.png">
       <img src="./img/portfolio-picture.png" alt="Portfolio Picture">
     </picture>
@@ -75,8 +79,7 @@
           <li>Adobe XD </li>
           <li>Figma</li>
         </ul>
-        <a>Resume</a>
-        <a href="files./Winter-2022-Resume-ver1.pdf" class="button" download>Download Resume</a>
+        <a href="files/winter-resume-2022-ver-1.pdf" target="_blank" class="button" download>Download Resume</a>
       </div>
     </div>
 
