@@ -217,6 +217,14 @@ img {
   width: 20%;
 }
 
+.sections li a {
+  color: black;
+}
+
+.sections li a:hover {
+  color: black;
+}
+
 /* === Medium Devices (641px and larger) === */
 @media only screen and (min-width: 641px) {
   header {
